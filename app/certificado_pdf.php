@@ -46,7 +46,7 @@ function fecha_larga(string $ymd): string
 
 const URL_VALIDA_FIRMAYA = 'https://firmaya.idok.cl/doc_validator';
 const URL_VALIDA_RES = 'https://www.registrodeempresasysociedades.cl/VerificarCertificados.aspx';
-const URL_VALIDA_PORTAL = 'https://socialis.consorciosalinero.cl/';
+const URL_VALIDA_PORTAL = 'https://socialis.grupoconsa.cl/';
 
 /**
  * Genera el PDF del certificado de accionista a partir del registro guardado ($cert con 'datos' JSON).

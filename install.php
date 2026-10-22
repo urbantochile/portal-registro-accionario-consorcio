@@ -54,7 +54,7 @@ function do_install(array $in): string
 
 if ($cli) {
     [$_, $host, $name, $user, $pass] = array_pad($argv, 5, '');
-    $url = $argv[5] ?? 'https://socialis.consorciosalinero.cl';
+    $url = $argv[5] ?? 'https://socialis.grupoconsa.cl';
     try { do_install(['host' => $host, 'port' => 3306, 'name' => $name, 'user' => $user, 'pass' => $pass, 'url' => $url, 'storage' => $argv[6] ?? '']); echo "Instalación completa.\n"; }
     catch (Throwable $e) { fwrite(STDERR, 'Error: ' . $e->getMessage() . "\n"); exit(1); }
     exit(0);
@@ -96,7 +96,7 @@ $checks = [
       <label>Nombre de la base de datos<input name="name" required value="<?= e($_POST['name'] ?? '') ?>"></label>
       <label>Usuario de la base<input name="user" required value="<?= e($_POST['user'] ?? '') ?>"></label>
       <label>Clave de la base<input type="password" name="pass" value=""></label>
-      <label>URL de la plataforma<input name="url" value="<?= e($_POST['url'] ?? 'https://socialis.consorciosalinero.cl') ?>"></label>
+      <label>URL de la plataforma<input name="url" value="<?= e($_POST['url'] ?? 'https://socialis.grupoconsa.cl') ?>"></label>
       <label class="span2">Carpeta de documentos (opcional; recomendado fuera de public_html)<input name="storage" value="<?= e($_POST['storage'] ?? '') ?>" placeholder="<?= e(__DIR__ . '/storage') ?>"></label>
     </div>
     <button class="btn primary">Instalar</button>

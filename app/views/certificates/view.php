@@ -36,7 +36,7 @@
     <a class="btn primary" href="<?= e(url('certificados.pdf', ['id' => $cert['id'], 'v' => 'firmado'])) ?>" target="_blank">Ver PDF firmado</a></p>
   <p class="muted small">SHA-256 firmado: <span class="mono"><?= e(substr((string)$cert['firmado_sha256'], 0, 32)) ?>…</span> · Valide la firma en <a href="<?= e(URL_VALIDA_FIRMAYA) ?>" target="_blank" rel="noopener">FirmaYa</a>.</p>
   <?php endif; ?>
-  <p class="small"><?= $isRes ? 'Validación del CVE: <a href="' . e(URL_VALIDA_RES) . '" target="_blank" rel="noopener">Registro de Empresas y Sociedades</a>' : 'Validación del folio: <a href="' . e(URL_VALIDA_PORTAL) . '" target="_blank" rel="noopener">socialis.consorciosalinero.cl</a>' ?></p>
+  <p class="small"><?= $isRes ? 'Validación del CVE: <a href="' . e(URL_VALIDA_RES) . '" target="_blank" rel="noopener">Registro de Empresas y Sociedades</a>' : 'Validación del folio: <a href="' . e(URL_VALIDA_PORTAL) . '" target="_blank" rel="noopener">socialis.grupoconsa.cl</a>' ?></p>
 </div>
 </div>
 <div class="card"><h3>Historial de certificados de esta posición</h3>
